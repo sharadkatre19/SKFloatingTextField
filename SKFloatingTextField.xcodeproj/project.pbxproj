@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF61627821F8963100C3110A /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF61627721F8963000C3110A /* icomoon.ttf */; };
+		DF61627B21F89F0800C3110A /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = DF61627A21F89F0800C3110A /* selection.json */; };
 		DFAD7B5421F726F800ABE521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD7B5321F726F800ABE521 /* AppDelegate.swift */; };
 		DFAD7B5621F726F800ABE521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD7B5521F726F800ABE521 /* ViewController.swift */; };
 		DFAD7B5921F726F800ABE521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD7B5721F726F800ABE521 /* Main.storyboard */; };
 		DFAD7B5B21F726FB00ABE521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAD7B5A21F726FB00ABE521 /* Assets.xcassets */; };
 		DFAD7B5E21F726FB00ABE521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD7B5C21F726FB00ABE521 /* LaunchScreen.storyboard */; };
+		DFAD7B6621F7271800ABE521 /* SKFloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD7B6521F7271800ABE521 /* SKFloatingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF61627721F8963000C3110A /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = icomoon.ttf; path = "../../../../../Users/sharadkatre/Downloads/Skype Downloads/icomoon/fonts/icomoon.ttf"; sourceTree = "<group>"; };
+		DF61627921F8971600C3110A /* FontUnicodeStructGeneration.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = FontUnicodeStructGeneration.playground; path = ../../../../../Users/sharadkatre/Downloads/FontUnicodeStructGeneration.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DF61627A21F89F0800C3110A /* selection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = selection.json; path = "../../../../../Users/sharadkatre/Downloads/Skype Downloads/icomoon/selection.json"; sourceTree = "<group>"; };
 		DFAD7B5021F726F800ABE521 /* SKFloatingTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKFloatingTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAD7B5321F726F800ABE521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFAD7B5521F726F800ABE521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,7 @@
 		DFAD7B5A21F726FB00ABE521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFAD7B5D21F726FB00ABE521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFAD7B5F21F726FB00ABE521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAD7B6521F7271800ABE521 /* SKFloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKFloatingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +63,14 @@
 			children = (
 				DFAD7B5321F726F800ABE521 /* AppDelegate.swift */,
 				DFAD7B5521F726F800ABE521 /* ViewController.swift */,
+				DF61627A21F89F0800C3110A /* selection.json */,
 				DFAD7B5721F726F800ABE521 /* Main.storyboard */,
 				DFAD7B5A21F726FB00ABE521 /* Assets.xcassets */,
 				DFAD7B5C21F726FB00ABE521 /* LaunchScreen.storyboard */,
 				DFAD7B5F21F726FB00ABE521 /* Info.plist */,
+				DFAD7B6521F7271800ABE521 /* SKFloatingTextField.swift */,
+				DF61627721F8963000C3110A /* icomoon.ttf */,
+				DF61627921F8971600C3110A /* FontUnicodeStructGeneration.playground */,
 			);
 			path = SKFloatingTextField;
 			sourceTree = "<group>";
@@ -125,6 +136,8 @@
 				DFAD7B5E21F726FB00ABE521 /* LaunchScreen.storyboard in Resources */,
 				DFAD7B5B21F726FB00ABE521 /* Assets.xcassets in Resources */,
 				DFAD7B5921F726F800ABE521 /* Main.storyboard in Resources */,
+				DF61627B21F89F0800C3110A /* selection.json in Resources */,
+				DF61627821F8963100C3110A /* icomoon.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFAD7B5621F726F800ABE521 /* ViewController.swift in Sources */,
+				DFAD7B6621F7271800ABE521 /* SKFloatingTextField.swift in Sources */,
 				DFAD7B5421F726F800ABE521 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,9 +208,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MOBISOFT INFOTECH, LLC";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = GA4BAP9K3F;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -255,9 +271,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MOBISOFT INFOTECH, LLC";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GA4BAP9K3F;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -282,14 +300,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA4BAP9K3F;
 				INFOPLIST_FILE = SKFloatingTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.mobisoft.SKFloatingTextField;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.mobisoft.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +320,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA4BAP9K3F;
 				INFOPLIST_FILE = SKFloatingTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.mobisoft.SKFloatingTextField;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.mobisoft.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
