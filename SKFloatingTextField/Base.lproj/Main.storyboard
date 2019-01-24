@@ -90,7 +90,7 @@
                                         <rect key="frame" x="0.0" y="75.5" width="343" height="60"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+91" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ql-iR-pQX" customClass="SKFloatingTextField" customModule="SKFloatingTextField" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="1oX-Ih-n3T"/>
                                                     <constraint firstAttribute="height" constant="60" id="2tZ-oS-ees"/>
@@ -108,7 +108,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-ro-Piq" customClass="SKFloatingTextField" customModule="SKFloatingTextField" customModuleProvider="target">
-                                                <rect key="frame" x="76" y="0.0" width="267" height="60"/>
+                                                <rect key="frame" x="87" y="0.0" width="256" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="Djc-jv-t3a"/>
                                                 </constraints>
@@ -261,7 +261,7 @@
                                         <rect key="frame" x="0.0" y="89" width="343" height="60"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+91" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Xb-15-sjD" customClass="SKFloatingTextField" customModule="SKFloatingTextField" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="FRz-wU-8sb"/>
                                                 </constraints>
@@ -278,7 +278,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUJ-DX-pU8" customClass="SKFloatingTextField" customModule="SKFloatingTextField" customModuleProvider="target">
-                                                <rect key="frame" x="87" y="0.0" width="256" height="60"/>
+                                                <rect key="frame" x="68.5" y="0.0" width="274.5" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="jEu-yx-WrT"/>
                                                 </constraints>
@@ -531,7 +531,7 @@
                                         <rect key="frame" x="0.0" y="89" width="343" height="60"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+91" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzY-ma-u6g" customClass="SKFloatingTextField" customModule="SKFloatingTextField" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="UKJ-iL-BXd"/>
                                                 </constraints>
@@ -548,7 +548,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kUn-AC-z1q" customClass="SKFloatingTextField" customModule="SKFloatingTextField" customModuleProvider="target">
-                                                <rect key="frame" x="87" y="0.0" width="256" height="60"/>
+                                                <rect key="frame" x="68.5" y="0.0" width="274.5" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="yqr-sC-X1E"/>
                                                 </constraints>
