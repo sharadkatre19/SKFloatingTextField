@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF61627821F8963100C3110A /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF61627721F8963000C3110A /* icomoon.ttf */; };
-		DF61627B21F89F0800C3110A /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = DF61627A21F89F0800C3110A /* selection.json */; };
+		DF99F70122268A5A0031B18E /* ToastMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99F70022268A5A0031B18E /* ToastMessageView.swift */; };
 		DFAD7B5421F726F800ABE521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD7B5321F726F800ABE521 /* AppDelegate.swift */; };
 		DFAD7B5621F726F800ABE521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD7B5521F726F800ABE521 /* ViewController.swift */; };
 		DFAD7B5921F726F800ABE521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD7B5721F726F800ABE521 /* Main.storyboard */; };
@@ -18,9 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF61627721F8963000C3110A /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = icomoon.ttf; path = "../../../../../Users/sharadkatre/Downloads/Skype Downloads/icomoon/fonts/icomoon.ttf"; sourceTree = "<group>"; };
-		DF61627921F8971600C3110A /* FontUnicodeStructGeneration.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = FontUnicodeStructGeneration.playground; path = ../../../../../Users/sharadkatre/Downloads/FontUnicodeStructGeneration.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		DF61627A21F89F0800C3110A /* selection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = selection.json; path = "../../../../../Users/sharadkatre/Downloads/Skype Downloads/icomoon/selection.json"; sourceTree = "<group>"; };
+		DF99F70022268A5A0031B18E /* ToastMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessageView.swift; sourceTree = "<group>"; };
 		DFAD7B5021F726F800ABE521 /* SKFloatingTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKFloatingTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAD7B5321F726F800ABE521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFAD7B5521F726F800ABE521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,14 +60,12 @@
 			children = (
 				DFAD7B5321F726F800ABE521 /* AppDelegate.swift */,
 				DFAD7B5521F726F800ABE521 /* ViewController.swift */,
-				DF61627A21F89F0800C3110A /* selection.json */,
+				DFAD7B6521F7271800ABE521 /* SKFloatingTextField.swift */,
 				DFAD7B5721F726F800ABE521 /* Main.storyboard */,
 				DFAD7B5A21F726FB00ABE521 /* Assets.xcassets */,
 				DFAD7B5C21F726FB00ABE521 /* LaunchScreen.storyboard */,
 				DFAD7B5F21F726FB00ABE521 /* Info.plist */,
-				DFAD7B6521F7271800ABE521 /* SKFloatingTextField.swift */,
-				DF61627721F8963000C3110A /* icomoon.ttf */,
-				DF61627921F8971600C3110A /* FontUnicodeStructGeneration.playground */,
+				DF99F70022268A5A0031B18E /* ToastMessageView.swift */,
 			);
 			path = SKFloatingTextField;
 			sourceTree = "<group>";
@@ -136,8 +131,6 @@
 				DFAD7B5E21F726FB00ABE521 /* LaunchScreen.storyboard in Resources */,
 				DFAD7B5B21F726FB00ABE521 /* Assets.xcassets in Resources */,
 				DFAD7B5921F726F800ABE521 /* Main.storyboard in Resources */,
-				DF61627B21F89F0800C3110A /* selection.json in Resources */,
-				DF61627821F8963100C3110A /* icomoon.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF99F70122268A5A0031B18E /* ToastMessageView.swift in Sources */,
 				DFAD7B5621F726F800ABE521 /* ViewController.swift in Sources */,
 				DFAD7B6621F7271800ABE521 /* SKFloatingTextField.swift in Sources */,
 				DFAD7B5421F726F800ABE521 /* AppDelegate.swift in Sources */,
@@ -312,7 +306,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +326,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -42,7 +42,7 @@ class SKFloatingTextField: UITextField {
         separatorView.clipsToBounds = true
         return separatorView
     }()
-
+    
     //MARK: - Responder handling
     @discardableResult
     override open func becomeFirstResponder() -> Bool {
@@ -67,7 +67,7 @@ class SKFloatingTextField: UITextField {
     open var editingOrSelected: Bool {
         return super.isEditing || super.isSelected
     }
-
+    
     //
     //MARK: - Default Separator Color
     //
@@ -77,7 +77,7 @@ class SKFloatingTextField: UITextField {
             updateSeparatorView(editingOrSelected)
         }
     }
-
+    
     //
     //MARK: - Selected Separator Color
     //
@@ -86,7 +86,7 @@ class SKFloatingTextField: UITextField {
             setNeedsDisplay()
         }
     }
-
+    
     //
     //MARK: - Default Separator Height
     //
@@ -96,7 +96,7 @@ class SKFloatingTextField: UITextField {
             updateSeparatorView(editingOrSelected)
         }
     }
-
+    
     //
     //MARK: - Selected Separator Height
     //
@@ -105,7 +105,7 @@ class SKFloatingTextField: UITextField {
             setNeedsDisplay()
         }
     }
-
+    
     //
     //MARK: - Placeholder Color
     //
@@ -115,7 +115,7 @@ class SKFloatingTextField: UITextField {
             updatePlaceholder()
         }
     }
-
+    
     //
     //MARK: - Default Title Label Text Color
     //
@@ -124,7 +124,7 @@ class SKFloatingTextField: UITextField {
             setNeedsDisplay()
         }
     }
-
+    
     //
     //MARK: - Selected Title Label Text Color
     //
@@ -137,12 +137,17 @@ class SKFloatingTextField: UITextField {
     //
     //MARK: - Title Label Font
     //
-    @objc dynamic open var titleFont: UIFont = .systemFont(ofSize: 13) {
+    @IBInspectable dynamic open var titleFont: UIFont = .systemFont(ofSize: 13) {
         didSet {
             setNeedsDisplay()
         }
     }
-
+    
+    @IBInspectable dynamic open var isTitleEnable: Bool = true {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     //
     //MARK: - Initialization
     //
@@ -245,36 +250,61 @@ class SKFloatingTextField: UITextField {
     
     // MARK: - TextField Rect Delegate Methods
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        if (self.text?.count)! > 0 {
-            self.titleLabel.isHidden = false
-            UIView.animate(withDuration: 0.3, animations: {
-                self.titleLabel.frame.origin.y = 0
-            }, completion: nil)
+        if isTitleEnable {
+            if (self.text?.count)! > 0 {
+                self.titleLabel.isHidden = false
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.titleLabel.frame.origin.y = 0
+                }, completion: nil)
+            } else {
+                self.titleLabel.isHidden = true
+                self.titleLabel.frame.origin.y = (self.frame.height / 2)
+            }
+            
+            var rect = super.editingRect(forBounds: bounds)
+            let rightRect = self.rightViewRect(forBounds: bounds)
+            rect.size.width -= rightRect.size.width
+            rect.origin.y += 10
+            return rect
         } else {
-            self.titleLabel.isHidden = true
-            self.titleLabel.frame.origin.y = (self.frame.height / 2)
+            return bounds
         }
-
-        var rect = super.editingRect(forBounds: bounds)
-        let rightRect = self.rightViewRect(forBounds: bounds)
-        rect.size.width -= rightRect.size.width
-        rect.origin.y += 10
-        return rect
     }
     
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        var rect = super.editingRect(forBounds: bounds)
-        let rightRect = self.rightViewRect(forBounds: bounds)
-        rect.size.width -= rightRect.size.width
-        rect.origin.y += 10
-        return rect
+        if isTitleEnable {
+            var rect = super.editingRect(forBounds: bounds)
+            let rightRect = self.rightViewRect(forBounds: bounds)
+            rect.size.width -= rightRect.size.width
+            rect.origin.y += 10
+            return rect
+        } else {
+            return bounds
+        }
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        var rect = super.editingRect(forBounds: bounds)
-        let rightRect = self.rightViewRect(forBounds: bounds)
-        rect.size.width -= rightRect.size.width
-        rect.origin.y += 10
-        return rect
+        if isTitleEnable {
+            var rect = super.editingRect(forBounds: bounds)
+            let rightRect = self.rightViewRect(forBounds: bounds)
+            rect.size.width -= rightRect.size.width
+            rect.origin.y += 10
+            return rect
+        } else {
+            return bounds
+        }
+    }
+    
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        if action == #selector(cut(_:)) {
+            return false
+        }
+        if action == #selector(copy(_:)) {
+            return false
+        }
+        if action == #selector(paste(_:)) {
+            return false
+        }
+        return super.canPerformAction(action, withSender: sender)
     }
 }
